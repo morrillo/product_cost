@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+	<record model="ir.ui.view" id="mrp_cost_view">
+	    <field name="name">mrp.bom_cost.inherit</field>
+	    <field name="model">mrp.bom</field>
+	    <field name="inherit_id" ref="mrp.mrp_bom_form_view" />
+	    <field name="arch" type="xml">
+	        <data>
+		<field name="product_qty" position="after">
+			<field name="manufacturing_cost" />
+		</field> 
+	        </data> 
+	    </field>
+	</record>
+
+    </data>
+</openerp>
