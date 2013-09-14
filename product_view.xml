@@ -9,12 +9,11 @@
 	    <field name="arch" type="xml">
 	        <data>
 	                <page position="after" string="Sales">
-        	            <page string="Cost History">
-				<field name="cost_ids" >
-                                	<tree string="Components">
+        	            <page string="Manufacturing Costs">
+				<field name="bom_ids" >
+                                	<tree string="Manufacturing Costs">
 	                                    <field name="name" />
-	                                    <field name="date" />
-	                                    <field name="cost" />
+	                                    <field name="manufacturing_cost" />
 					</tree>
 				</field>
 			   </page>
